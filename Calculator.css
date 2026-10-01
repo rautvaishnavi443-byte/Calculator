@@ -1,0 +1,40 @@
+
+*{
+    font-family: cursive;
+    font-size: large;
+}body{
+    background-image: url("calulator bg.PNG");
+    background-size: cover;
+}
+#result{
+    height:50px;
+    width:522px;
+    border:1px solid black;
+    border-bottom: none;
+    background-color: white;
+}
+#b{
+    width:100px;
+    height: 50px;
+}
+#calculator{
+    margin-left:400px;
+    margin-top:200px;
+}
+#btns{
+    border:1px solid black;
+    background-color: rgba(180, 178, 178, 0.671);
+}
+#b{
+    border-radius: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+#b:hover{
+    background-color: rgba(196, 194, 194, 0.425);
+    border : 1px white solid;
+    color: rgba(0, 0, 0, 0.575);
+}
+#result:hover{
+    cursor: text;
+}
