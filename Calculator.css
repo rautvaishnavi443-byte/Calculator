@@ -1,40 +1,87 @@
 
-*{
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: cursive;
     font-size: large;
-}body{
+}
+
+body {
     background-image: url("calulator bg.PNG");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
-#result{
-    height:50px;
-    width:522px;
-    border:1px solid black;
+
+#calculator {
+    width: 100%;
+    max-width: 522px;
+    margin: 0 auto;
+}
+
+#result {
+    height: 50px;
+    width: 100%;
+    border: 1px solid black;
     border-bottom: none;
     background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    overflow-x: auto;
 }
-#b{
-    width:100px;
+
+#result:hover {
+    cursor: text;
+}
+
+#btns {
+    width: 100%;
+    border: 1px solid black;
+    background-color:rgba(180, 178, 178, 0.671);
+    border-collapse: collapse;
+}
+
+#btns td {
+    width: 20%;
+    padding: 2px;
+}
+
+#b {
+    width: 100%;
     height: 50px;
-}
-#calculator{
-    margin-left:400px;
-    margin-top:200px;
-}
-#btns{
-    border:1px solid black;
-    background-color: rgba(180, 178, 178, 0.671);
-}
-#b{
     border-radius: 1.5%;
     border: none;
     cursor: pointer;
+     background-color: rgb(235, 234, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#b:hover{
+
+#b:hover {
     background-color: rgba(196, 194, 194, 0.425);
-    border : 1px white solid;
+    border: 1px solid white;
     color: rgba(0, 0, 0, 0.575);
 }
-#result:hover{
-    cursor: text;
+
+/* Responsive adjustments for mobile screens  */
+ @media (max-width: 480px) {
+    * {
+        font-size: medium;
+    }
+    
+    #result {
+        height: 45px;
+    }
+
+    #b {
+        height: 45px;
+    }
 }
